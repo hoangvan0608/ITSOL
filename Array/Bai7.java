@@ -51,6 +51,11 @@ public class Bai7 {
         int []b = new int[a.length];
         for(int i=0; i< a.length;i++)
         {
+            if(i == a.length-1)
+            {
+                b[index]++;
+                break;
+            }
             if(a[i] > a[i+1])
             {
                 b[index]++;
@@ -61,8 +66,6 @@ public class Bai7 {
             }
         }
         xuatMang(a,b);
-        for (int i = 0; i < b.length; i++) {
-            System.out.println(b[i]);
-        }
+
     }
 }
